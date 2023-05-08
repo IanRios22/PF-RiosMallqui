@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../multimedia/fonts/DancingScript-VariableFont_wght.ttf);
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*SECCIONES GENERALES*/
+.section-padding {
+  padding: 70px 0;
+}
+
+/*NAVBAR*/
+.navbar {
+  background: linear-gradient(45deg, rgba(31, 31, 199, 0.908), rgba(17, 135, 21, 0.917), rgba(226, 123, 20, 0.886));
+}
+.navbar-brand {
+  padding: 5px;
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 0.919);
+  z-index: 1;
+}
+.navbar-brand:hover {
+  border: rgb(238, 238, 238) solid;
+  border-radius: 30px;
+  background-color: rgba(184, 234, 146, 0.917);
+}
+.navbar-brand img {
+  height: 50px;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Dancing Script";
+  font-weight: bold;
+}
+.navbar-collapse .navbar-nav {
+  gap: 20px;
+}
+.navbar-collapse .navbar-nav .nav-item {
+  transition: all 0.3s;
+  font-size: 30px;
+}
+.navbar-collapse .navbar-nav .nav-item:hover {
+  border: rgb(238, 238, 238) solid;
+  border-radius: 10px;
+  background-color: rgba(184, 234, 146, 0.917);
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(238, 238, 238);
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(49, 45, 45);
+}
+.navbar-collapse .navbar-nav .btn1 {
+  padding: 9px 25px;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 30px;
+  font-size: 20px;
+  background-color: rgb(8, 130, 8);
+  color: rgba(238, 238, 238, 0.933);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.navbar-collapse .navbar-nav .btn1:hover {
+  background-color: rgb(202, 102, 26);
+  transform: scale(1.1);
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(45deg, rgba(31, 31, 199, 0.908), rgba(17, 135, 21, 0.917), rgba(226, 123, 20, 0.886));
+}
+footer .container img {
+  height: 110px;
+}
+
+/*caja1*/
+.caja1 {
+  background: url("../multimedia/img/seguridadinfor.gif");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+.caja1-caj {
+  color: rgba(255, 255, 255, 0.955);
+  font-family: "Dancing Script";
+  transition: all 2s;
+  transform: rotatey(0deg);
+}
+.caja1-caj:hover {
+  transform: scale(1.1, 1.25);
+  transform: rotatey(360deg);
+}
+.caja1-caj img {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.caja1-caj-desarrollo {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+/**/
+/*caja 2*/
+.caja2 {
+  background: linear-gradient(45deg, rgba(17, 119, 85, 0.4), rgba(236, 29, 29, 0.879), rgba(240, 190, 98, 0.907));
+}
+.caja2 h2 {
+  font-family: "Dancing Script";
+}
+.caja2 .img {
+  background: linear-gradient(45deg, rgb(213, 170, 121), rgb(149, 233, 111));
+  border-radius: 20px;
+  transition: 1s;
+}
+.caja2 .img:hover {
+  border-radius: 20px;
+  transform: scale(1.2, 1.2);
+  box-shadow: 1px 10px 10px 0px #3c3a3a;
+}
+.caja2 .img img {
+  height: 90px;
+}
+.caja2 .img p {
+  font-family: "Dancing Script";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/**/
+/*caja 3*/
+.caja3 {
+  background: linear-gradient(145deg, blue, skyblue);
+}
+.caja3 h3, .caja3 h2 {
+  font-family: "Dancing Script";
+}
+.caja3 .card {
+  background: linear-gradient(145deg, rgb(0, 0, 255), rgb(135, 206, 235));
+  position: relative;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  border: none;
+}
+.caja3 .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.caja3 .card .face h3 {
+  padding-top: 20px;
+}
+.caja3 .card .face.front {
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 50px;
+  box-shadow: 0 5px 10px 5px #000;
+  background: linear-gradient(45deg, rgb(98, 98, 246), rgb(95, 226, 95));
+}
+.caja3 .card .face.back {
+  transform: perspective(500px) rotateY(180deg);
+  box-shadow: 0 5px 10px 5px #000;
+  border-radius: 50px;
+  background: linear-gradient(45deg, rgb(98, 98, 246), rgb(95, 226, 95));
+}
+.caja3 .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.caja3 .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/**/
+/*caja4*/
+.caja4 {
+  background: linear-gradient(45deg, rgba(99, 99, 226, 0.942), rgba(112, 240, 112, 0.862), rgba(246, 107, 107, 0.926));
+}
+.caja4 form {
+  border-radius: 20px;
+}
+.caja4 form textarea {
+  resize: none;
+}
+
+/*PLANES*/
+.planes {
+  background: linear-gradient(130deg, rgba(73, 73, 220, 0.914), rgba(97, 231, 97, 0.908));
+}
+.planes-text h1 {
+  font-family: "Dancing Script";
+  color: rgb(240, 248, 255);
+}
+.planes-text .planes-boton {
+  background-color: rgb(113, 113, 226);
+  color: white;
+  border: none;
+  transition: all 0.3s;
+}
+.planes-text .planes-boton:hover {
+  background-color: rgb(132, 76, 9);
+  transform: scale(1.2);
+}
+.planes-tabla-item {
+  background: linear-gradient(140deg, rgba(19, 66, 185, 0.889), rgba(98, 204, 247, 0.966));
+  border-radius: 20px;
+  font-size: 20px;
+}
+.planes-tabla-item:hover {
+  color: rgba(255, 255, 255, 0.927);
+  transform: scale(1.1);
+  box-shadow: 1px 10px 10px 0px #3c3a3a;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.planes-tabla-item .botonplanes {
+  background-color: rgba(132, 237, 26, 0.929);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.planes-tabla-item .botonplanes:hover {
+  background-color: rgba(8, 113, 8, 0.975);
+  color: rgb(240, 248, 255);
+}
+
+.socio {
+  background-image: url("../multimedia/img/portasocio.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Dancing Script";
+}
+.socio-boton {
+  font-family: "Dancing Script";
+  font-weight: bold;
+}
+.socio-boton .boton-socio {
+  background-color: rgb(0, 170, 255);
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-family: "Dancing Script";
+  transition: all 0.2s;
+}
+.socio-boton .boton-socio:hover {
+  font-family: "Dancing Script";
+  background-color: blue;
+  color: rgba(240, 248, 255, 0.974);
+  transform: scale(1.2);
+}
+
+/*CONTACTO*/
+.image1 {
+  background-image: url("../multimedia/img/CANDADO.jpg");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+}
+.image1 .image-1 {
+  background: linear-gradient(40deg, rgb(27, 30, 212), rgb(38, 171, 216));
+  padding: 20px;
+  border-radius: 20px;
+}
+.image1 .image-1-buttons .btn-lg {
+  background-color: rgb(52, 52, 135);
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 0.924);
+  font-weight: bold;
+  font-size: 20px;
+}
+.image1 .image-1-buttons .btn-lg:hover {
+  background-color: rgb(210, 105, 30);
+  transform: scale(1.1);
+}
+.image1 .image-1 .form-label {
+  color: rgb(255, 255, 255);
+}
+
+.ubicacion {
+  background: linear-gradient(130deg, rgb(255, 145, 0), rgb(175, 241, 95));
+}
+.ubicacion .mapa {
+  font-family: "Dancing Script";
+  color: rgba(250, 250, 250, 0.979);
+  font-weight: bold;
+}
+.ubicacion .mapa iframe {
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.localizacion {
+  font-family: "Dancing Script";
+}
+.localizacion img {
+  height: 20vw;
+  transition: 0.3s;
+}
+.localizacion img:hover {
+  transform: scale(1.1);
+}
+
+.socio {
+  background-image: url("../multimedia/img/portasocio.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Dancing Script";
+}
+.socio-boton {
+  font-family: "Dancing Script";
+  font-weight: bold;
+}
+.socio-boton .boton-socio {
+  background-color: rgb(0, 170, 255);
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-family: "Dancing Script";
+  transition: all 0.2s;
+}
+.socio-boton .boton-socio:hover {
+  font-family: "Dancing Script";
+  background-color: blue;
+  color: rgba(240, 248, 255, 0.974);
+  transform: scale(1.2);
+}
+
+/**/
+/*NOSOTROS*/
+.nosotros {
+  background: linear-gradient(130deg, rgba(82, 190, 233, 0.966), rgba(81, 81, 234, 0.922));
+}
+.nosotros .tarjet {
+  background: linear-gradient(130deg, rgba(237, 43, 43, 0.934), rgb(78, 78, 241), rgb(75, 195, 75));
+  border-radius: 20px;
+  border: solid;
+  color: rgba(255, 255, 255, 0.915);
+}
+.nosotros .tarjet .card-1-text {
+  font-size: 20px;
+}
+
+.valoracion {
+  background: linear-gradient(130deg, rgba(5, 49, 66, 0.966), rgba(81, 81, 234, 0.922));
+  font-size: 30px;
+  color: white;
+  font-family: "Dancing Script";
+  font-weight: bold;
+}
+
+/**/
+/*VIDEOS*/
+.videos {
+  background: linear-gradient(40deg, rgb(27, 30, 212), rgb(38, 171, 216));
+}
+.videos .card-2 {
+  background: linear-gradient(130deg, rgb(255, 145, 0), rgb(175, 241, 95));
+  transition: all 0.3s;
+}
+.videos .card-2:hover {
+  transform: scale(1.1);
+}
+.videos .card-2 iframe {
+  border-radius: 20px;
+  object-fit: cover;
+}
+.videos .card-2 .boton-noticias {
+  border: none;
+  background-color: rgb(178, 177, 234);
+}
+
+@media screen and (min-width: 760px) {
+  .card-2 iframe {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .card-2 iframe {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

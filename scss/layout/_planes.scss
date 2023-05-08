@@ -1,0 +1,75 @@
+/*PLANES*/
+.planes {
+    background: linear-gradient(130deg, rgba(73, 73, 220, 0.914), rgba(97, 231, 97, 0.908));
+
+    &-text {
+        h1 {
+            font-family: "Dancing Script";
+            color: rgb(240, 248, 255);
+        }
+
+        .planes-boton {
+            background-color: rgb(113, 113, 226);
+            color: white;
+            border: none;
+            transition: all .3s;
+
+            &:hover {
+                background-color: rgb(132, 76, 9);
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &-tabla-item {
+        background: linear-gradient(140deg, rgba(19, 66, 185, 0.889), rgba(98, 204, 247, 0.966));
+        border-radius: 20px;
+        font-size: 20px;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.927);
+            transform: scale(1.1);
+            box-shadow: 1px 10px 10px 0px #3c3a3a;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        .botonplanes {
+            background-color: rgba(132, 237, 26, 0.929);
+            border: none;
+            border-radius: 20px;
+            transition: all .3s;
+
+            &:hover {
+                background-color: rgba(8, 113, 8, 0.975);
+                color: rgb(240, 248, 255);
+            }
+        }
+    }
+}
+
+
+.socio {
+    background-image: url("../multimedia/img/portasocio.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Dancing Script";
+    &-boton {
+        font-family: "Dancing Script";
+        font-weight: bold;
+        .boton-socio {
+            background-color: rgb(0, 170, 255);
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            font-family: "Dancing Script";
+            transition: all .2s;
+            &:hover {
+                font-family: "Dancing Script";
+                background-color: blue;
+                color: rgba(240, 248, 255, 0.974);
+                transform: scale(1.2);
+            }
+        }
+    }
+}

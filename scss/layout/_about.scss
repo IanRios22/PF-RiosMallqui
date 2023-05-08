@@ -1,0 +1,22 @@
+/*NOSOTROS*/
+.nosotros {
+    background: linear-gradient(130deg, rgba(82, 190, 233, 0.966), rgba(81, 81, 234, 0.922));
+    .tarjet {
+        background: linear-gradient(130deg, rgba(237, 43, 43, 0.934), rgb(78, 78, 241), rgb(75, 195, 75));
+        border-radius: 20px;
+        border: solid;
+        color: rgba(255, 255, 255, 0.915);
+        .card-1-text {
+            font-size: 20px;
+        }
+    }
+}
+.valoracion {
+    background: linear-gradient(130deg, rgba(5, 49, 66, 0.966), rgba(81, 81, 234, 0.922));
+    font-size: 30px;
+    color: white;
+    font-family: "Dancing Script";
+    font-weight: bold;
+}
+
+/**/

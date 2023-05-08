@@ -1,0 +1,7 @@
+@mixin d1-flex($display,$direction,$justify,$align,$gap){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}

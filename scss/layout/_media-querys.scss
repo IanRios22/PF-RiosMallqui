@@ -1,0 +1,22 @@
+@media screen and (min-width:760px){
+    .card-2 {
+        iframe {
+            
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (max-width:1180px){
+    .card-2 {
+        iframe {
+            
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}

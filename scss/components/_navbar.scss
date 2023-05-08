@@ -1,0 +1,63 @@
+/*NAVBAR*/
+.navbar {
+    background: linear-gradient(45deg,
+            rgba(31, 31, 199, 0.908),
+            rgba(17, 135, 21, 0.917),
+            rgba(226, 123, 20, 0.886));
+    &-brand {
+        padding: 5px;
+        transition: all 0.2s;
+        color: rgba(255, 255, 255, 0.919);
+        z-index: 1;
+        &:hover {
+            border: rgb(238, 238, 238) solid;
+            border-radius: 30px;
+            background-color: rgba(184, 234, 146, 0.917);
+        }
+        img {
+            height: 50px;
+        }
+    }
+    &-collapse {
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Dancing Script";
+        font-weight: bold;
+        .navbar-nav {
+            gap: 20px;
+            .nav-item {
+                transition: all 0.3s;
+                font-size: 30px;
+                &:hover {
+                    border: rgb(238, 238, 238) solid;
+                    border-radius: 10px;
+                    background-color: rgba(184, 234, 146, 0.917);
+                }
+                .nav-link {
+                    color: rgb(238, 238, 238);
+                    &:hover {
+                        color: rgb(49, 45, 45);
+                    }
+                }
+            }
+            .btn1 {
+                padding: 9px 25px;
+                display: inline-block;
+                font-weight: 500;
+                margin-right: 30px;
+                font-size: 20px;
+                background-color: rgb(8, 130, 8);
+                color: rgba(238, 238, 238, 0.933);
+                border: none;
+                border-radius: 50px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: rgb(202, 102, 26);
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+    }
+}
+
